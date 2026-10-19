@@ -1,0 +1,268 @@
+
+[
+    {
+        "id": 1,
+        "question": "Which keyword is used to define a function in Python?",
+        "options": ["function", "def", "define", "func"],
+        "answer": "def",
+        "topic": "Python",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 2,
+        "question": "Which data structure follows the FIFO principle?",
+        "options": ["Stack", "Queue", "Tree", "Graph"],
+        "answer": "Queue",
+        "topic": "Data Structures",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 3,
+        "question": "Which SQL command is used to retrieve data from a database?",
+        "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+        "answer": "SELECT",
+        "topic": "Databases",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 4,
+        "question": "Which Python data type stores key-value pairs?",
+        "options": ["List", "Tuple", "Dictionary", "Set"],
+        "answer": "Dictionary",
+        "topic": "Python",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 5,
+        "question": "What is the time complexity of binary search on a sorted array?",
+        "options": ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+        "answer": "O(log n)",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 6,
+        "question": "Which SQL clause is used to filter groups after GROUP BY?",
+        "options": ["WHERE", "ORDER BY", "HAVING", "FROM"],
+        "answer": "HAVING",
+        "topic": "Databases",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 7,
+        "question": "Which keyword is used to handle exceptions in Python?",
+        "options": ["catch", "except", "error", "handle"],
+        "answer": "except",
+        "topic": "Python",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 8,
+        "question": "Which data structure uses the LIFO principle?",
+        "options": ["Queue", "Stack", "Graph", "Heap"],
+        "answer": "Stack",
+        "topic": "Data Structures",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 9,
+        "question": "Which SQL keyword removes duplicate rows from a result?",
+        "options": ["UNIQUE", "DISTINCT", "REMOVE", "FILTER"],
+        "answer": "DISTINCT",
+        "topic": "Databases",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 10,
+        "question": "Which Python module provides functions for generating random values?",
+        "options": ["math", "random", "numbers", "generate"],
+        "answer": "random",
+        "topic": "Python",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 11,
+        "question": "What does OOP stand for?",
+        "options": [
+            "Object-Oriented Programming",
+            "Object Operating Process",
+            "Ordered Object Programming",
+            "Open Object Protocol"
+        ],
+        "answer": "Object-Oriented Programming",
+        "topic": "Programming",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 12,
+        "question": "Which algorithmic technique repeatedly divides a problem into smaller subproblems?",
+        "options": ["Divide and conquer", "Linear search", "Brute force", "Hashing"],
+        "answer": "Divide and conquer",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 13,
+        "question": "Which SQL operation combines rows from two or more tables using a related column?",
+        "options": ["JOIN", "GROUP", "SORT", "MERGE"],
+        "answer": "JOIN",
+        "topic": "Databases",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 14,
+        "question": "Which Python structure is ordered and mutable?",
+        "options": ["Tuple", "List", "Set", "Frozen set"],
+        "answer": "List",
+        "topic": "Python",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 15,
+        "question": "Which data structure is commonly used to implement breadth-first search?",
+        "options": ["Stack", "Queue", "Tree", "Set only"],
+        "answer": "Queue",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 16,
+        "question": "What does a primary key uniquely identify?",
+        "options": ["A database", "A table", "A row", "A column type"],
+        "answer": "A row",
+        "topic": "Databases",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 17,
+        "question": "Which Python statement is used to import a module?",
+        "options": ["include", "using", "import", "require"],
+        "answer": "import",
+        "topic": "Python",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 18,
+        "question": "Which sorting algorithm has an average-case time complexity of O(n log n) and uses a divide-and-conquer strategy?",
+        "options": ["Bubble sort", "Merge sort", "Linear search", "Selection sort"],
+        "answer": "Merge sort",
+        "topic": "Algorithms",
+        "difficulty": "Medium"
+    },
+    {
+        "id": 19,
+        "question": "Which SQL constraint prevents NULL values in a column?",
+        "options": ["UNIQUE", "PRIMARY", "NOT NULL", "CHECK"],
+        "answer": "NOT NULL",
+        "topic": "Databases",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 20,
+        "question": "Which Python keyword is used to create a class?",
+        "options": ["object", "class", "struct", "type"],
+        "answer": "class",
+        "topic": "Python",
+        "difficulty": "Easy"
+    },
+    {
+        "id": 21,
+        "question": "What is the output of this code?\n\nvalues = [1, 2, 3]\nresult = [x * 2 for x in values if x > 1]\nprint(result)",
+        "options": ["[2, 4, 6]", "[4, 6]", "[2, 3]", "[1, 2, 3, 1, 2, 3]"],
+        "answer": "[4, 6]",
+        "topic": "Python",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 22,
+        "question": "What does this code print?\n\nclass Counter:\n    count = 0\n    def __init__(self):\n        Counter.count += 1\n\na = Counter()\nb = Counter()\nprint(a.count)",
+        "options": ["0", "1", "2", "An error"],
+        "answer": "2",
+        "topic": "Python",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 23,
+        "question": "Which data structure is most suitable for efficiently retrieving the minimum element repeatedly when new elements are inserted?",
+        "options": ["Queue", "Min-heap", "Stack", "Unsorted linked list"],
+        "answer": "Min-heap",
+        "topic": "Data Structures",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 24,
+        "question": "In a hash table using separate chaining, what is the expected search time when the load factor remains bounded and the hash function distributes keys uniformly?",
+        "options": ["O(1)", "O(log n)", "O(n log n)", "O(n²)"],
+        "answer": "O(1)",
+        "topic": "Data Structures",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 25,
+        "question": "A table has 100 rows. A query filters rows with WHERE status = 'active' and then groups the remaining rows by department. Which clause filters departments after grouping?",
+        "options": ["WHERE", "HAVING", "ORDER BY", "FROM"],
+        "answer": "HAVING",
+        "topic": "Databases",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 26,
+        "question": "A table Enrolment(student_id, course_id) may contain many courses per student. Which query returns students enrolled in more than three distinct courses?",
+        "options": [
+            "SELECT student_id FROM Enrolment WHERE COUNT(course_id) > 3 GROUP BY student_id;",
+            "SELECT student_id FROM Enrolment GROUP BY student_id HAVING COUNT(DISTINCT course_id) > 3;",
+            "SELECT DISTINCT student_id FROM Enrolment HAVING course_id > 3;",
+            "SELECT student_id FROM Enrolment ORDER BY COUNT(course_id) > 3;"
+        ],
+        "answer": "SELECT student_id FROM Enrolment GROUP BY student_id HAVING COUNT(DISTINCT course_id) > 3;",
+        "topic": "Databases",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 27,
+        "question": "An algorithm performs one pass through n elements, then runs binary search on the same sorted collection. What is its overall time complexity?",
+        "options": ["O(log n)", "O(n)", "O(n log n)", "O(n²)"],
+        "answer": "O(n)",
+        "topic": "Algorithms",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 28,
+        "question": "Which statement about merge sort is generally correct for an array implementation?",
+        "options": [
+            "It has O(n²) worst-case time and O(1) auxiliary space",
+            "It has O(n log n) worst-case time and typically O(n) auxiliary space",
+            "It always runs in O(log n) time",
+            "It cannot sort duplicate values"
+        ],
+        "answer": "It has O(n log n) worst-case time and typically O(n) auxiliary space",
+        "topic": "Algorithms",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 29,
+        "question": "Which statement best describes polymorphism in object-oriented programming?",
+        "options": [
+            "A class can have no methods",
+            "Different object types can provide a common interface with type-specific behaviour",
+            "Every class must inherit from two parent classes",
+            "An object can store only one attribute"
+        ],
+        "answer": "Different object types can provide a common interface with type-specific behaviour",
+        "topic": "Programming",
+        "difficulty": "Hard"
+    },
+    {
+        "id": 30,
+        "question": "What is the main purpose of method overriding in a subclass?",
+        "options": [
+            "To delete the parent class",
+            "To provide a subclass-specific implementation of an inherited method",
+            "To make every method static",
+            "To prevent object creation"
+        ],
+        "answer": "To provide a subclass-specific implementation of an inherited method",
+        "topic": "Programming",
+        "difficulty": "Hard"
+    }
+]

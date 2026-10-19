@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Superknova | Learn. Play. Progress.</title>
+
+    <link
+        href="{{ url_for('static', filename='style.css') }}"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- =========================================================
+         BACKGROUND STARS
+    ========================================================== -->
+
+    <div class="stars" id="stars"></div>
+
+
+    <div class="app">
+
+        <!-- =====================================================
+             SPLASH SCREEN
+        ====================================================== -->
+
+        <section
+            class="screen splash-screen active"
+            id="splashScreen"
+        >
+
+            <div class="splash-content">
+
+                <div class="splash-rocket">
+                    🚀
+                </div>
+
+                <h1>
+                    SUPERKNOVA
+                </h1>
+
+                <div class="splash-line"></div>
+
+                <p>
+                    MISSION KNOWLEDGE
+                </p>
+
+                <span class="loading-text">
+                    Preparing your mission
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             HOME SCREEN
+        ====================================================== -->
+
+        <section
+            class="screen home-screen"
+            id="homeScreen"
+        >
+
+            <div
+                class="home-stars"
+                id="homeStars"
+            ></div>
+
+
+            <!-- ================= HEADER ================= -->
+
+            <header class="site-header">
+
+                <div class="site-logo">
+
+                    <span class="logo-icon">
+                        🚀
+                    </span>
+
+                    <span class="logo-text">
+                        SUPERKNOVA
+                    </span>
+
+                </div>
+
+
+                <nav class="main-nav">
+
+                    <a
+                        class="nav-link active"
+                        href="#"
+                        id="homeNav"
+                    >
+                        Home
+                    </a>
+
+                    <a
+                        class="nav-link"
+                        href="#"
+                        id="aboutNav"
+                    >
+                        About Us
+                    </a>
+
+                    <a
+                        class="nav-link"
+                        href="#"
+                        id="helpNav"
+                    >
+                        Help
+                    </a>
+
+                    <a
+                        class="login-button"
+                        href="#"
+                        id="loginButton"
+                    >
+                        Login
+                    </a>
+
+                </nav>
+
+            </header>
+
+
+            <!-- ================= HERO ================= -->
+
+            <main class="home-main">
+
+                <section class="hero-section">
+
+                    <h1>
+                        Welcome Explorers!
+                    </h1>
+
+                    <p class="hero-description">
+                        learn, practice and reach for the stars with superknova
+                    </p>
+
+                    <br>
+                    <br>
+
+                    <button
+                        class="hero-button"
+                        id="startButton"
+                    >
+                        GET STARTED
+
+                    </button>
+
+                </section>
+
+
+                <!-- ================= FEATURES ================= -->
+
+                <section class="features-section">
+
+                    <div class="section-heading">
+
+                        <p>
+                            EXPLORE
+                        </p>
+
+                        <h2>
+                            What would you like to do?
+                        </h2>
+
+                        <span>
+                            Choose an activity and start your learning journey.
+                        </span>
+
+                    </div>
+
+
+                    <div class="feature-carousel">
+
+                    
+
+
+                        <div
+                            class="feature-track"
+                            id="featureTrack"
+                        >
+
+                            <!-- ================= GAME ================= -->
+
+                            <article class="feature-card">
+
+                                <h3>
+                                    Play the Game
+                                </h3>
+
+                                <p>
+                                    Test your knowledge, answer questions
+                                    and progress through the learning board.
+                                </p>
+
+                                <button
+                                    class="feature-button"
+                                    id="playGameCard"
+                                >
+                                    PLAY NOW
+                            
+                                </button>
+
+                            </article>
+
+
+                            <!-- ================= TIMER ================= -->
+
+                            <article class="feature-card">
+
+
+                                <h3>
+                                    Start Timer
+                                </h3>
+
+                                <p>
+                                    Stay focused with a dedicated study
+                                    timer and complete your learning mission.
+                                </p>
+
+                                <button
+                                    class="feature-button"
+                                    id="timerCard"
+                                >
+                                    START TIMER
+  
+                                </button>
+
+                            </article>
+
+
+                            <!-- ================= STATISTICS ================= -->
+
+                            <article class="feature-card">
+
+                       
+
+                                <h3>
+                                    Statistics
+                                </h3>
+
+                                <p>
+                                    Track your performance, identify your
+                                    strengths and discover areas to improve.
+                                </p>
+
+                                <button
+                                    class="feature-button"
+                                    id="statsCard"
+                                >
+                                    VIEW STATS
+
+                                </button>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+
+          
+
+                 
+
+                </section>
+
+            </main>
+
+
+            <!-- ================= FOOTER ================= -->
+
+            <footer class="site-footer">
+
+                <div class="footer-content">
+
+                    <div class="footer-brand">
+                        SUPERKNOVA
+                    </div>
+
+                    <div class="footer-social">
+
+                        <a
+                            aria-label="Instagram"
+                            class="social-link"
+                            href="#"
+                        >
+                            Instagram
+                        </a>
+
+                        <a
+                            aria-label="Facebook"
+                            class="social-link"
+                            href="#"
+                        >
+                            Facebook
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-bottom">
+
+                    <span>
+                        © 2026 SUPERKNOVA. All rights reserved.
+                    </span>
+
+                </div>
+
+            </footer>
+
+        </section>
+
+
+        <!-- =====================================================
+             STATISTICS SCREEN
+             
+             IMPORTANT:
+             This is OUTSIDE homeScreen.
+        ====================================================== -->
+
+        <section
+            class="screen stats-screen"
+            id="statsScreen"
+        >
+
+            <!-- ================= HEADER ================= -->
+
+            <header class="stats-header">
+
+                <button
+                    class="stats-back-button"
+                    id="statsBack"
+                >
+                    ← HOME
+                </button>
+
+
+                <div class="stats-title">
+
+                    <span>
+                        MISSION CONTROL
+                    </span>
+
+                    <h1>
+                        Your Learning Statistics
+                    </h1>
+
+                    <p>
+                        Track your progress, discover your strengths
+                        and identify where you can improve.
+                    </p>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= MAIN ================= -->
+
+            <main class="stats-main">
+
+
+                <!-- =================================================
+                     OVERVIEW CARDS
+                ================================================== -->
+
+                <section class="stats-overview">
+
+
+                    <!-- ACCURACY -->
+
+                    <article class="stats-card">
+
+                        <div class="stats-card-icon">
+                            🎯
+                        </div>
+
+                        <div class="stats-card-label">
+                            ACCURACY
+                        </div>
+
+                        <strong
+                            id="statsAccuracy"
+                            class="stats-card-value"
+                        >
+                            0%
+                        </strong>
+
+                        <span class="stats-card-subtitle">
+                            Overall performance
+                        </span>
+
+                    </article>
+
+
+                    <!-- QUESTIONS -->
+
+                    <article class="stats-card">
+
+                        <div class="stats-card-icon">
+                            🧠
+                        </div>
+
+                        <div class="stats-card-label">
+                            QUESTIONS
+                        </div>
+
+                        <strong
+                            id="statsQuestions"
+                            class="stats-card-value"
+                        >
+                            0
+                        </strong>
+
+                        <span class="stats-card-subtitle">
+                            Questions answered
+                        </span>
+
+                    </article>
+
+
+                    <!-- BEST STREAK -->
+
+                    <article class="stats-card">
+
+                        <div class="stats-card-icon">
+                            🔥
+                        </div>
+
+                        <div class="stats-card-label">
+                            BEST STREAK
+                        </div>
+
+                        <strong
+                            id="statsBestStreak"
+                            class="stats-card-value"
+                        >
+                            0
+                        </strong>
+
+                        <span class="stats-card-subtitle">
+                            Consecutive correct answers
+                        </span>
+
+                    </article>
+
+
+                    <!-- SCORE -->
+
+                    <article class="stats-card">
+
+                        <div class="stats-card-icon">
+                            ⭐
+                        </div>
+
+                        <div class="stats-card-label">
+                            SCORE
+                        </div>
+
+                        <strong
+                            id="statsScore"
+                            class="stats-card-value"
+                        >
+                            0
+                        </strong>
+
+                        <span class="stats-card-subtitle">
+                            Total mission points
+                        </span>
+
+                    </article>
+
+                </section>
+
+
+                <!-- =================================================
+                     PERFORMANCE SECTION
+                ================================================== -->
+
+                <section class="stats-section">
+
+                    <div class="stats-section-heading">
+
+                        <div>
+
+                            <span>
+                                PERFORMANCE
+                            </span>
+
+                            <h2>
+                                How are you performing?
+                            </h2>
+
+                        </div>
+
+                        <div
+                            class="stats-difficulty"
+                            id="statsDifficulty"
+                        >
+                            ADAPTIVE
+                        </div>
+
+                    </div>
+
+
+                    <div class="performance-panel">
+
+
+                        <!-- PERFORMANCE SUMMARY -->
+
+                        <div class="performance-summary">
+
+                            <div class="performance-big-number">
+
+                                <strong id="statsCorrect">
+                                    0
+                                </strong>
+
+                                <span>
+                                    Correct
+                                </span>
+
+                            </div>
+
+
+                            <div class="performance-divider"></div>
+
+
+                            <div class="performance-big-number">
+
+                                <strong id="statsWrong">
+                                    0
+                                </strong>
+
+                                <span>
+                                    Incorrect
+                                </span>
+
+                            </div>
+
+
+                            <div class="performance-divider"></div>
+
+
+                            <div class="performance-big-number">
+
+                                <strong id="statsCurrentStreak">
+                                    0
+                                </strong>
+
+                                <span>
+                                    Current Streak
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ACCURACY BAR -->
+
+                        <div class="accuracy-section">
+
+                            <div class="accuracy-header">
+
+                                <span>
+                                    Overall Accuracy
+                                </span>
+
+                                <strong id="statsAccuracyBarText">
+                                    0%
+                                </strong>
+
+                            </div>
+
+
+                            <div class="accuracy-bar">
+
+                                <div
+                                    class="accuracy-fill"
+                                    id="statsAccuracyBar"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     TOPIC PERFORMANCE
+                ================================================== -->
+
+                <section class="stats-section">
+
+                    <div class="stats-section-heading">
+
+                        <div>
+
+                            <span>
+                                KNOWLEDGE MAP
+                            </span>
+
+                            <h2>
+                                Topic Performance
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="topic-performance"
+                        id="topicPerformance"
+                    >
+
+                        <div class="stats-empty">
+
+                            <span>
+                                🛰️
+                            </span>
+
+                            <p>
+                                Answer more questions to map
+                                your knowledge.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+
+                <!-- =================================================
+                     ACHIEVEMENTS
+                ================================================== -->
+
+                <section class="stats-section">
+
+                    <div class="stats-section-heading">
+
+                        <div>
+
+                            <span>
+                                ACHIEVEMENTS
+                            </span>
+
+                            <h2>
+                                Mission Milestones
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="achievements-grid"
+                        id="statsAchievements"
+                    >
+
+                        <div class="achievement-empty">
+
+                            <span>
+                                🏆
+                            </span>
+
+                            <p>
+                                Complete missions to unlock
+                                achievements.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- =================================================
+                     MISSION PROGRESS
+                ================================================== -->
+
+                <section
+                    class="stats-section mission-progress-section"
+                >
+
+                    <div class="stats-section-heading">
+
+                        <div>
+
+                            <span>
+                                SPACE JOURNEY
+                            </span>
+
+                            <h2>
+                                Mission Progress
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mission-progress-grid">
+
+
+                        <!-- POSITION -->
+
+                        <div class="mission-stat">
+
+                            <span class="mission-stat-icon">
+                                🚀
+                            </span>
+
+                            <div>
+
+                                <span>
+                                    CURRENT POSITION
+                                </span>
+
+                                <strong id="statsPosition">
+                                    1 / 100
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TOPIC -->
+
+                        <div class="mission-stat">
+
+                            <span class="mission-stat-icon">
+                                📚
+                            </span>
+
+                            <div>
+
+                                <span>
+                                    CURRENT TOPIC
+                                </span>
+
+                                <strong id="statsTopic">
+                                    Mixed
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- WORMHOLES -->
+
+                        <div class="mission-stat">
+
+                            <span class="mission-stat-icon">
+                                🌀
+                            </span>
+
+                            <div>
+
+                                <span>
+                                    WORMHOLES
+                                </span>
+
+                                <strong id="statsWormholes">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- ROCKET BOOSTS -->
+
+                        <div class="mission-stat">
+
+                            <span class="mission-stat-icon">
+                                🚀
+                            </span>
+
+                            <div>
+
+                                <span>
+                                    ROCKET BOOSTS
+                                </span>
+
+                                <strong id="statsRocketBoosts">
+                                    0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <!-- ================= FOOTER ================= -->
+
+            <footer class="stats-footer">
+
+                <span>
+                    SUPERKNOVA • MISSION CONTROL
+                </span>
+
+                <button
+                    class="stats-back-button footer-back"
+                    id="statsBackBottom"
+                >
+                    ← BACK TO HOME
+                </button>
+
+            </footer>
+
+        </section>
+
+
+        <!-- =====================================================
+             HOW TO PLAY
+        ====================================================== -->
+
+        <section
+            class="screen info-screen"
+            id="howToPlayScreen"
+        >
+
+            <div class="info-card">
+
+                <div class="info-header">
+
+
+                    <h2>
+                        How To Play
+                    </h2>
+
+                </div>
+
+
+                <div class="instructions">
+
+
+                    <!-- QUESTION -->
+
+                    <div class="instruction">
+
+
+                        <div>
+
+                            <h3>
+                                Answer Questions
+                            </h3>
+
+                            <p>
+                                Python selects questions based on
+                                your topic and difficulty.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CORRECT -->
+
+                    <div class="instruction">
+
+
+
+                        <div>
+
+                            <h3>
+                                Correct Answer
+                            </h3>
+
+                            <p>
+                                Answer correctly and your rocket
+                                moves forward.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WRONG -->
+
+                    <div class="instruction">
+
+
+
+                        <div>
+
+                            <h3>
+                                Wrong Answer
+                            </h3>
+
+                            <p>
+                                A wormhole sends your rocket
+                                backwards.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- POINTS -->
+
+                    <div class="instruction">
+
+                        <div>
+
+                            <h3>
+                                Earn Points
+                            </h3>
+
+                            <p>
+                                Correct answers, streaks and
+                                special squares give you points.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- COMPLETE -->
+
+                    <div class="instruction">
+
+
+
+                        <div>
+
+                            <h3>
+                                Complete Your Mission
+                            </h3>
+
+                            <p>
+                                Reach square 100 and complete
+                                your learning mission.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-button"
+                    id="howToPlayBack"
+                >
+                    ← BACK
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section
+            class="screen info-screen"
+            id="aboutScreen"
+        >
+
+            <div class="info-card about-card">
+
+                <div class="info-header">
+
+                    <h2>
+                        About Superknova
+                    </h2>
+
+                </div>
+
+
+                <p>
+
+                    Superknova is an educational game that
+                    combines quiz-based learning with a
+                    space-themed board game.
+
+                </p>
+
+
+
+
+                <p class="about-highlight">
+
+                    Python is the brain of Superknova.
+                    The frontend is responsible primarily
+                    for displaying the game and its animations.
+
+                </p>
+
+
+                <button
+                    class="primary-button"
+                    id="aboutBack"
+                >
+                    ← BACK
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+    ========================================================== -->
+
+    <script
+        src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+
+</body>
+
+</html>

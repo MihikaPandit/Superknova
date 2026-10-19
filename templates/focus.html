@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Superknova - Focus Mission</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='focus.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="space">
+
+        <!-- Background stars -->
+        <div class="stars"></div>
+
+
+        <!-- ================================================= -->
+        <!-- HEADER -->
+        <!-- ================================================= -->
+
+        <header class="focus-header">
+
+            <div class="logo">
+                🚀 Superknova
+            </div>
+
+            <div class="mission-label">
+                FOCUS MISSION
+            </div>
+
+        </header>
+
+
+        <!-- ================================================= -->
+        <!-- SETUP SCREEN -->
+        <!-- ================================================= -->
+
+        <section
+            class="setup-screen"
+            id="setupScreen"
+        >
+
+            <div class="mission-card">
+
+                <div class="planet-preview">
+                    🪐
+                </div>
+
+                <h1>
+                    Focus Mission
+                </h1>
+
+                <p class="subtitle">
+                    Focus until the rocket reaches the planet.
+                </p>
+
+
+                <div class="mission-objective">
+
+                    <span>MISSION OBJECTIVE</span>
+
+                    <strong>
+                        LAND THE ROCKET
+                    </strong>
+
+                </div>
+
+
+                <!-- TIME SELECTION -->
+
+                <h3>
+                    Choose your study time
+                </h3>
+
+                <div class="time-options">
+
+                    <button
+                        class="time-button"
+                        data-time="15"
+                    >
+                        15 min
+                    </button>
+
+                    <button
+                        class="time-button selected"
+                        data-time="25"
+                    >
+                        25 min
+                    </button>
+
+                    <button
+                        class="time-button"
+                        data-time="45"
+                    >
+                        45 min
+                    </button>
+
+                    <button
+                        class="time-button"
+                        data-time="60"
+                    >
+                        60 min
+                    </button>
+
+                </div>
+
+
+                <!-- CUSTOM TIME -->
+
+                <div class="custom-time">
+
+                    <label for="customMinutes">
+                        Or choose your own time
+                    </label>
+
+                    <div class="custom-input">
+
+                        <input
+                            type="number"
+                            id="customMinutes"
+                            min="1"
+                            max="120"
+                            placeholder="Minutes"
+                        >
+
+                        <span>
+                            minutes
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="launch-button"
+                    id="launchButton"
+                >
+                    🚀 LAUNCH MISSION
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- ACTIVE MISSION -->
+        <!-- ================================================= -->
+
+        <section
+            class="mission-screen hidden"
+            id="missionScreen"
+        >
+
+            <div class="mission-top">
+
+                <div>
+
+                    <span class="small-label">
+                        CURRENT MISSION
+                    </span>
+
+                    <h1>
+                        LAND ON PLANET NOVA
+                    </h1>
+
+                </div>
+
+                <div
+                    class="mission-status"
+                    id="missionStatus"
+                >
+                    🔵 IN PROGRESS
+                </div>
+
+            </div>
+
+
+            <!-- TIMER -->
+
+            <div
+                class="timer"
+                id="timer"
+            >
+                25:00
+            </div>
+
+
+            <!-- SPACE TRACK -->
+
+            <div class="space-track">
+
+                <div class="stars-track"></div>
+
+                <div
+                    class="rocket"
+                    id="rocket"
+                >
+                    🚀
+                </div>
+
+                <div class="planet">
+                    🪐
+                </div>
+
+            </div>
+
+
+            <!-- PROGRESS -->
+
+            <div class="progress-container">
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="progressFill"
+                    ></div>
+
+                </div>
+
+                <div class="progress-text">
+
+                    <span>
+                        Mission progress
+                    </span>
+
+                    <span id="progressText">
+                        0%
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p
+                class="focus-message"
+                id="focusMessage"
+            >
+                Stay focused. Your rocket is travelling to the planet.
+            </p>
+
+
+            <button
+                class="abort-button"
+                id="abortButton"
+            >
+                ✕ End Mission
+            </button>
+
+        </section>
+
+
+        <!-- ================================================= -->
+        <!-- RESULT -->
+        <!-- ================================================= -->
+
+        <section
+            class="result-screen hidden"
+            id="resultScreen"
+        >
+
+            <div class="result-card">
+
+                <div
+                    class="result-icon"
+                    id="resultIcon"
+                >
+                    🌟
+                </div>
+
+                <h1 id="resultTitle">
+                    MISSION COMPLETE
+                </h1>
+
+                <p id="resultMessage">
+                    You successfully completed your focus mission!
+                </p>
+
+
+                <div class="xp-box">
+
+                    <span>
+                        XP EARNED
+                    </span>
+
+                    <strong id="xpEarned">
+                        +100 XP
+                    </strong>
+
+                </div>
+
+
+                <div class="result-buttons">
+
+                    <button
+                        class="launch-button"
+                        id="againButton"
+                    >
+                        🚀 NEW MISSION
+                    </button>
+
+                    <button
+                        class="secondary-button"
+                        onclick="window.location.href='/'"
+                    >
+                        ← BACK TO LEARNLADDER
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script
+        src="{{ url_for('static', filename='focus.js') }}"
+    ></script>
+
+</body>
+
+</html>

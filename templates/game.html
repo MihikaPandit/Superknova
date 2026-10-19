@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Superknova | Game</title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+</head><body class="game-page"><div class="stars" id="stars"></div><div class="app"><section class="screen setup-screen active" id="setupScreen">
+<div class="setup-card">
+<div class="setup-header">
+<div class="setup-icon">
+                🚀
+            </div>
+<h2>
+                Prepare Your Mission
+            </h2>
+<p>
+                Configure your learning journey.
+            </p>
+</div>
+<!-- PLAYER NAME -->
+<div class="form-group">
+<label>
+                PLAYER NAME
+            </label>
+<input id="playerName" maxlength="20" placeholder="Enter your name" type="text"/>
+</div>
+<!-- TOPIC -->
+<div class="form-group">
+<label>
+                SELECT TOPIC
+            </label>
+<select id="topic">
+<option value="Mixed">
+                    Mixed Topics
+                </option>
+<option value="Python">
+                    Python
+                </option>
+<option value="Data Structures">
+                    Data Structures
+                </option>
+<option value="Databases">
+                    Databases
+                </option>
+<option value="Algorithms">
+                    Algorithms
+                </option>
+<option value="Programming">
+                    Programming
+                </option>
+</select>
+</div>
+<!-- DIFFICULTY -->
+<div class="form-group">
+<label>
+                DIFFICULTY
+            </label>
+<select id="difficulty">
+<option value="Adaptive">
+                    Adaptive
+                </option>
+<option value="Easy">
+                    Easy
+                </option>
+<option value="Medium">
+                    Medium
+                </option>
+<option value="Hard">
+                    Hard
+                </option>
+</select>
+</div>
+<!-- ACTIONS -->
+<div class="setup-actions">
+<button class="secondary-button" id="backHomeButton">
+                ← BACK
+            </button>
+<button class="primary-button" id="launchButton">
+                LAUNCH
+            </button>
+</div>
+</div>
+</section><section class="screen game-screen" id="gameScreen">
+<!-- GAME HEADER -->
+<header class="game-header">
+<div class="brand">
+            🚀 Superknova
+        </div>
+<div class="game-player">
+
+            PLAYER:
+
+            <span id="hudPlayer">
+                Player
+            </span>
+</div>
+</header>
+<main class="game-layout">
+<!-- =================================================
+             LEFT: BOARD
+        ================================================= -->
+<div class="board-section">
+<div class="board-title">
+<span>
+                    MISSION BOARD
+                </span>
+<span class="difficulty-badge" id="hudDifficulty">
+                    ADAPTIVE
+                </span>
+</div>
+<div class="board" id="board">
+<!--
+                    Board squares are generated
+                    by JavaScript.
+                -->
+<div class="player" id="player">
+                    🚀
+                </div>
+</div>
+<div class="game-message" id="gameMessage">
+                Ready for your learning journey!
+            </div>
+</div>
+<!-- =================================================
+             RIGHT: GAME PANEL
+        ================================================= -->
+<div class="game-panel">
+<!-- =================================================
+                 STATS
+            ================================================= -->
+<div class="panel-card stats-card">
+<div class="panel-title">
+                    MISSION STATUS
+                </div>
+<div class="stats-grid">
+<!-- POSITION -->
+<div class="stat">
+<span>
+                            POSITION
+                        </span>
+<strong id="hudPosition">
+                            1 / 100
+                        </strong>
+</div>
+<!-- SCORE -->
+<div class="stat">
+<span>
+                            SCORE
+                        </span>
+<strong id="hudScore">
+                            0
+                        </strong>
+</div>
+<!-- ACCURACY -->
+<div class="stat">
+<span>
+                            ACCURACY
+                        </span>
+<strong id="hudAccuracy">
+                            0%
+                        </strong>
+</div>
+<!-- STREAK -->
+<div class="stat">
+<span>
+                            STREAK
+                        </span>
+<strong id="hudStreak">
+                            0
+                        </strong>
+</div>
+</div>
+</div>
+<!-- =================================================
+                 QUESTION
+            ================================================= -->
+<div class="panel-card question-card" id="questionCard">
+<div class="question-top">
+<span>
+                        QUESTION
+                    </span>
+<span id="questionNumber">
+                        1
+                    </span>
+</div>
+<h2 id="questionText">
+                    Loading question...
+                </h2>
+<div class="options" id="options">
+</div>
+<button class="submit-answer" disabled="" id="submitAnswer">
+                    SUBMIT ANSWER
+                </button>
+</div>
+<!-- =================================================
+                 ACHIEVEMENT MINI
+            ================================================= -->
+<div class="achievement-mini" id="achievementMini">
+<span>
+                    🏆
+                </span>
+<div>
+<small>
+                        ACHIEVEMENTS
+                    </small>
+<strong id="achievementCount">
+                        0
+                    </strong>
+</div>
+</div>
+<!-- EXIT -->
+<button class="quit-button" id="quitButton">
+                EXIT MISSION
+            </button>
+</div>
+</main>
+</section><section class="screen results-screen" id="resultsScreen">
+<div class="results-card">
+<div class="results-icon">
+            🌟
+        </div>
+<h1>
+            MISSION COMPLETE
+        </h1>
+<p class="results-player">
+
+            Congratulations,
+
+            <strong id="resultsPlayer">
+                Player
+            </strong>
+</p>
+<!-- =================================================
+             RESULTS GRID
+        ================================================= -->
+<div class="results-grid">
+<!-- SCORE -->
+<div class="result-item">
+<span>
+                    FINAL SCORE
+                </span>
+<strong id="resultScore">
+                    0
+                </strong>
+</div>
+<!-- ACCURACY -->
+<div class="result-item">
+<span>
+                    ACCURACY
+                </span>
+<strong id="resultAccuracy">
+                    0%
+                </strong>
+</div>
+<!-- CORRECT -->
+<div class="result-item">
+<span>
+                    CORRECT
+                </span>
+<strong id="resultCorrect">
+                    0
+                </strong>
+</div>
+<!-- WRONG -->
+<div class="result-item">
+<span>
+                    WRONG
+                </span>
+<strong id="resultWrong">
+                    0
+                </strong>
+</div>
+<!-- STREAK -->
+<div class="result-item">
+<span>
+                    BEST STREAK
+                </span>
+<strong id="resultStreak">
+                    0
+                </strong>
+</div>
+<!-- POSITION -->
+<div class="result-item">
+<span>
+                    POSITION
+                </span>
+<strong id="resultPosition">
+                    0
+                </strong>
+</div>
+</div>
+<!-- =================================================
+             LEARNING ANALYSIS
+        ================================================= -->
+<div class="analysis-section">
+<h2>
+                LEARNING ANALYSIS
+            </h2>
+<div id="topicAnalysis">
+</div>
+</div>
+<!-- =================================================
+             MISTAKES
+        ================================================= -->
+<div class="mistakes-section">
+<h2>
+                MISTAKE REVIEW
+            </h2>
+<div id="mistakeList">
+</div>
+</div>
+<!-- =================================================
+             ACHIEVEMENTS
+        ================================================= -->
+<div class="achievement-section">
+<h2>
+                ACHIEVEMENTS
+            </h2>
+<div class="achievement-list" id="achievementList">
+</div>
+</div>
+<!-- =================================================
+             RESULT ACTIONS
+        ================================================= -->
+<div class="results-actions">
+<button class="secondary-button" id="homeFromResults">
+                HOME
+            </button>
+<button class="primary-button" id="playAgain">
+                🚀 PLAY AGAIN
+            </button>
+</div>
+</div>
+</section><div class="event-overlay" id="eventOverlay">
+<div class="event-box" id="eventBox">
+<div class="event-icon" id="eventIcon">
+            🚀
+        </div>
+<h2 id="eventTitle">
+            Correct!
+        </h2>
+<p id="eventDescription">
+            Rocket boost!
+        </p>
+</div>
+</div><div class="achievement-popup" id="achievementPopup">
+<div class="achievement-icon">
+        🏆
+    </div>
+<div>
+<small>
+            ACHIEVEMENT UNLOCKED
+        </small>
+<h3 id="achievementName">
+            First Launch
+        </h3>
+<p id="achievementDescription">
+            You answered your first question correctly.
+        </p>
+</div>
+</div></div><script src="{{ url_for('static', filename='script.js') }}"></script></body></html>
